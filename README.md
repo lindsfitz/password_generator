@@ -21,3 +21,5 @@ To create a new, secure password:
 # Mock-Up
 
 # Deployed Link:
+
+[Password Generator Link](https://lindsfitz.github.io/password_generator/)
