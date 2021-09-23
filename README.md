@@ -1,7 +1,7 @@
 # password_generator
 Javascript Password Generator
 
-# Acceptance criteria
+# Application Goals:
 To create a new, secure password:
 - Click the button to generate a password
 - User will then be presented with a series of prompts for password criteria
@@ -19,6 +19,8 @@ To create a new, secure password:
 - Application interface is clean and polished
 
 # Mock-Up
+
+<img src="./assets/laptop-example.jpg">
 
 # Deployed Link:
 
