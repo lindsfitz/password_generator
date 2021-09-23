@@ -14,15 +14,17 @@ const lowerArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
 const upperArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 const specArray = ["!","@","#","$","%","^","&","*","(",")"];
 const numArray = ["1","2","3","4","5","6","7","8","9","0"];
-var holdingArray = [];
-var passwordArray = [];
 
 function generatePassword() {
-
+  
+  var holdingArray = [];
+  var passwordArray = [];
+  
   var charInput = prompt("Please choose a password character length between 8 and 128.");
   if (isNaN(charInput) || charInput < 8 || charInput > 128) {
     alert("Please choose a number between 8 and 128.");
     generatePassword();
+    return;
   }
 
   var lowerInput = confirm("Include lowercase letters?");
@@ -33,6 +35,7 @@ function generatePassword() {
   if (!lowerInput && !upperInput && !specialInput && !numericInput) {
     alert("You must choose at least one.");
     generatePassword();
+    return;
   }
   
 
